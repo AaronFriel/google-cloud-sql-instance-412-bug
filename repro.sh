@@ -54,7 +54,7 @@ trap "exit" INT TERM ERR
 # terraform apply
 # popd
 
-pushd update
+pushd drift
 terraform init
 terraform apply
 popd
