@@ -37,7 +37,8 @@ fi
 
 cwd=$(pwd)
 exit() {
-  echo "Cleaning up"
+  echo "⚠️ Cleaning up in 5 seconds. If this script ran as expected, you should see an error above."
+  sleep 5
   if [ -f "${cwd}/update/terraform.tfstate" ]; then
     cd "${cwd}/update"
     terraform destroy
