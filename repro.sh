@@ -49,10 +49,10 @@ exit() {
 }
 trap "exit" INT TERM ERR
 
-pushd create
-terraform init
-terraform apply
-popd
+# pushd create
+# terraform init
+# terraform apply
+# popd
 
 pushd update
 terraform init
