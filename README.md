@@ -17,7 +17,8 @@ Directory structure:
 * `drift`: a plan applied without saving state to simulate drift
 * `update`: an update to the initial state, which fails due to drift
 * `repro.sh`: a script to create the instance, apply the drift via an import & apply without using
-  the initial tfstate, and apply an update using the initial tfstate.
+  the initial tfstate, and apply an update using the initial tfstate. The script then cleans up by
+  deleting the instance.
 
 We expect the `repro.sh` script to result in an error:
 
